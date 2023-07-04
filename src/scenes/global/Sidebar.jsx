@@ -80,8 +80,8 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                <Typography variant="h3" color={colors.greenAccent[500]}>
+                  ADMIN
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -109,9 +109,6 @@ const Sidebar = () => {
                   sx={{ m: "10px 0 0 0" }}
                 >
                   Ishika Agarwal
-                </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
-                  Admin
                 </Typography>
               </Box>
             </Box>
