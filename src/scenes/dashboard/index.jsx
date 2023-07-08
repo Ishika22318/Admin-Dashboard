@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
+import { Box,Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
@@ -20,9 +20,25 @@ const Dashboard = () => {
 
   return (
     <Box className = "page-content" >
+    {/* <Box m="20px" > */}
       {/* HEADER */}
-      <Box alignItems="center">
+      {/* <Box alignItems="center"> */}
+      <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Box>
+          <Button
+            sx={{
+              backgroundColor: colors.blueAccent[700],
+              color: colors.grey[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+            }}
+          >
+            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+            Download Reports
+          </Button>
+        </Box>
       </Box>
       {/* GRID & CHARTS */}
       <Box

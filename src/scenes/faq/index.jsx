@@ -10,7 +10,7 @@ const FAQ = () =>{
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
-    return ( <Box m = "20px">
+    return ( <Box className = "page-content">
         <Header
             title="FAQ"
             subtitle="Frequently Asked Question Page"

@@ -60,7 +60,7 @@ const Team = () => {
   ];
 
   return (
-    <Box m="20px">
+    <Box className = "page-content">
       <Header title="TEAM" subtitle="Managing the TEAM Members" />
       <Box
         m="40px 0 0 0"
